@@ -139,6 +139,7 @@
 
   min-height: 50px;
   padding: 13px 25px;
+  border-radius: var(--radius-pill);
 
   border: 1px solid var(--secondary);
   background: var(--secondary);
@@ -1893,7 +1894,7 @@ body.dark-mode .menu-snacks-eyebrow span {
   align-items: center;
   justify-content: center;
   gap: 10px;
-
+border-radius: var(--radius-pill);
   min-height: 46px;
   padding: 11px 22px;
 

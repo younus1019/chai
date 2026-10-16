@@ -1449,7 +1449,7 @@ body.dark-mode .brewing-editorial-image {
   padding: 15px 23px;
   border: 1px solid var(--primary);
   border-radius: var(--radius-pill);
-  background: var(--primary);
+  background: var(--secondary);
   color: var(--white);
   font-size: var(--button-font-size);
   font-weight: var(--button-font-weight);
@@ -1459,8 +1459,8 @@ body.dark-mode .brewing-editorial-image {
 
 .chai-experience-cta:hover {
   border-color: var(--secondary);
-  background: var(--secondary);
-  color: var(--black);
+  background: var(--primary);
+  color: var(--white);
 }
 
 .chai-experience-cta-arrow {

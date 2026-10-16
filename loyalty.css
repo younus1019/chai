@@ -154,7 +154,7 @@
 
   min-height: 46px;
   padding: 11px 22px;
-
+border-radius: var(--radius-pill);
   font-family: var(--body-font);
   font-size: var(--button-font-size);
   font-weight: var(--button-font-weight);
@@ -2074,7 +2074,7 @@ body.dark-mode .loyalty-circle-bottom p {
 
   border: 1px solid #3A1F16;
   border-radius: 40px;
-  background: #3A1F16;
+  background: #B8893C;
   color: #FFFFFF;
 
   font-size: 0.72rem;
@@ -2087,7 +2087,7 @@ body.dark-mode .loyalty-circle-bottom p {
 
 .loyalty-final-cta-primary:hover {
   border-color: #B8893C;
-  background: #B8893C;
+  background: #3A1F16;
   color: #FFFFFF;
   transform: translateY(-2px);
 }

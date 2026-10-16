@@ -2649,7 +2649,7 @@ body.dark-mode .chai-gallery-item {
   min-height: 52px;
   padding: 15px 27px;
   border: 1px solid var(--secondary);
-  border-radius: var(--radius-sm);
+ border-radius: var(--radius-pill);
   background: var(--secondary);
   color: var(--primary);
   font-family: var(--body-font);
@@ -2660,9 +2660,9 @@ body.dark-mode .chai-gallery-item {
 }
 
 .royal-cta-button:hover {
-  border-color: var(--white);
-  background: var(--white);
-  color: var(--primary);
+  border-color: var(--secondary);
+  background: var(--primary);
+  color: var(--white);
   transform: translateY(-2px);
 }
 
