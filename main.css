@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary: #3A1F16;
+  --secondary: #B8893C;
+
+  --text: #3A1F16;
+  --muted: #70594D;
+
+  --background: #FFFFFF;
+  --surface: #FFFFFF;
+  --surface-alt: #F8F4EF;
+  --border: #E5D8CB;
+
+  --white: #FFFFFF;
+  --black: #000000;
+
+  --heading-font: "Cormorant Upright", serif;
+  --body-font: "Cormorant Upright", serif;
+
+  --body-font-size: 1.2rem;
+  --nav-font-size: 1rem;
+  --button-font-size: 0.95rem;
+
+  --body-font-weight: 600;
+  --nav-font-weight: 600;
+  --button-font-weight: 700;
+  --heading-font-weight: 700;
+
+  --line-height: 1.7;
+
+  --radius-sm: 10px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-pill: 40px;
+  --radius-round: 50%;
+
+  --transition: all 0.12s ease;
+  --theme-transition: background-color 0.35s ease, color 0.35s ease;
+
+  --shadow-soft: 0 8px 24px rgba(58, 31, 22, 0.08);
+  --shadow-dropdown: 0 18px 40px rgba(58, 31, 22, 0.14);
+  --shadow-panel: 0 20px 45px rgba(58, 31, 22, 0.18);
+  --shadow-secondary: 0 12px 22px rgba(184, 137, 60, 0.28);
+
+  --primary-btn-bg: var(--secondary);
+  --primary-btn-color: var(--white);
+  --primary-btn-hover-bg: var(--primary);
+  --primary-btn-border: transparent;
+
+  --secondary-btn-bg: transparent;
+  --secondary-btn-color: var(--primary);
+  --secondary-btn-hover-bg: var(--primary);
+  --secondary-btn-hover-color: var(--white);
+  --secondary-btn-border: var(--primary);
+}
+
+body.dark-mode {
+  --text: #FFFFFF;
+  --muted: #D2C2B5;
+
+  --background: #000000;
+  --surface: #0D0806;
+  --surface-alt: #1A0F0B;
+  --border: rgba(184, 137, 60, 0.20);
+
+  --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-dropdown: 0 18px 40px rgba(0, 0, 0, 0.50);
+  --shadow-panel: 0 20px 45px rgba(0, 0, 0, 0.60);
+  --shadow-secondary: 0 12px 22px rgba(184, 137, 60, 0.20);
+
+  --secondary-btn-color: var(--secondary);
+  --secondary-btn-border: rgba(184, 137, 60, 0.45);
+  --secondary-btn-hover-bg: var(--secondary);
+  --secondary-btn-hover-color: var(--black);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--text);
+  font-family: var(--body-font);
+  font-size: var(--body-font-size);
+  font-weight: var(--body-font-weight);
+  line-height: var(--line-height);
+  transition: var(--theme-transition);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--text);
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+p,
+a,
+li,
+label,
+input,
+textarea,
+select,
+option,
+button {
+  font-family: var(--body-font);
+}
+
+p {
+  color: var(--muted);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 11px 19px;
+  border: 1px solid var(--primary-btn-border);
+  border-radius: var(--radius-pill);
+  background: var(--primary-btn-bg);
+  color: var(--primary-btn-color);
+  font-family: var(--body-font);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  line-height: 1.2;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-primary:hover {
+  background: var(--primary-btn-hover-bg);
+  color: var(--white);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-secondary);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 11px 19px;
+  border: 1px solid var(--secondary-btn-border);
+  border-radius: var(--radius-pill);
+  background: var(--secondary-btn-bg);
+  color: var(--secondary-btn-color);
+  font-family: var(--body-font);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  line-height: 1.2;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-secondary:hover {
+  background: var(--secondary-btn-hover-bg);
+  color: var(--secondary-btn-hover-color);
+  border-color: var(--secondary-btn-hover-bg);
+  transform: translateY(-3px);
+}
+
+.section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  margin-bottom: 16px;
+  color: var(--secondary);
+  font-family: var(--body-font);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.section-eyebrow-line {
+  display: inline-block;
+  width: 30px;
+  height: 1px;
+  flex-shrink: 0;
+  background: var(--secondary);
+}
+
+
+:root {
+  --section-heading-size: 3rem;
+  --card-heading-size: 1.5rem;
+  --section-eyebrow-size: 0.9rem;
+  --small-text-size: 0.9rem;
+}
+
+.hero-title,
+.section-heading {
+  font-family: var(--heading-font);
+  font-size: var(--section-heading-size);
+  font-weight: var(--heading-font-weight);
+  line-height: 1.2;
+}
+
+.section-eyebrow {
+  font-size: var(--section-eyebrow-size);
+  font-weight: 600;
+}
+
+.hero-description,
+.story-description,
+.signature-chai-description,
+.chai-card-content p {
+  font-family: var(--body-font);
+  font-size: var(--body-font-size);
+  font-weight: var(--body-font-weight);
+  line-height: var(--line-height);
+}
+
+.story-highlight h3,
+.chai-card-content h3,
+.hero-label-title {
+  font-family: var(--heading-font);
+  font-size: var(--card-heading-size);
+  font-weight: var(--heading-font-weight);
+  line-height: 1.3;
+}
+
+.story-highlight p,
+.chai-card-category {
+  font-family: var(--body-font);
+  font-size: var(--small-text-size);
+  font-weight: var(--body-font-weight);
+  line-height: var(--line-height);
+}

@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <title>Loyalty</title>
+      <link rel="icon" type="image/png" href="images/CHAI LGO 2.png" />
+ 
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="loyalty.css">
+  <link rel="stylesheet" href="global.css">
+</head>
+ 
+<body>
+ 
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+ 
+     
+<!-- Brand -->
+<a href="index.html" class="brand-logo" aria-label="Chai Darbar Home">
+ 
+  <img
+    src="images/CHAI LGO 2.png"
+    alt="Chai Darbar Logo"
+  >
+ 
+  <span class="brand-name">
+    <span class="brand-chai">CHAI</span>
+    <span class="brand-darbar">DARBAR</span>
+    <span class="brand-tagline">THE ROYAL ART OF CHAI</span>
+  </span>
+ 
+</a>
+ 
+ 
+ 
+      <!-- Navigation -->
+      <nav class="main-nav" id="navMenu" aria-label="Main Navigation">
+ 
+        <!-- Home Dropdown -->
+        <div class="nav-dropdown">
+ 
+          <button
+            class="nav-dropdown-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-haspopup="true"
+          >
+            <span>Home</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+ 
+          <div class="nav-dropdown-menu">
+ 
+            <a href="index.html" class="nav-dropdown-link">
+ 
+              <span class="nav-dropdown-title">
+                <i data-lucide="house"></i>
+                <span>Home 1</span>
+              </span>
+ 
+              <small>Classic Heritage</small>
+ 
+            </a>
+ 
+ 
+            <a href="index2.html" class="nav-dropdown-link">
+ 
+              <span class="nav-dropdown-title">
+                <i data-lucide="sparkles"></i>
+                <span>Home 2</span>
+              </span>
+ 
+              <small>Premium Royal</small>
+ 
+            </a>
+ 
+          </div>
+ 
+        </div>
+ 
+ 
+        <!-- Main Links -->
+        <a href="about.html" class="nav-link">
+          About Us
+        </a>
+ 
+        <a href="ourchai.html" class="nav-link">
+          Our Chai
+        </a>
+ 
+        <a href="menu.html" class="nav-link">
+          Menu
+        </a>
+ 
+        <a href="loyalty.html" class="nav-link">
+          Loyalty
+        </a>
+ 
+        <a href="contact.html" class="nav-link">
+          Contact
+        </a>
+
+                <a href="contact.html#contact-location" class="nav-mobile-cta">
+  <i data-lucide="map-pin"></i>
+  <span>Find Us</span>
+</a>
+ 
+      </nav>
+ 
+ 
+      <!-- Header Actions -->
+      <div class="header-actions">
+ 
+        <!-- RTL -->
+        <button
+          class="header-icon-btn"
+          id="rtlToggle"
+          type="button"
+          aria-label="Toggle RTL direction"
+          title="Toggle RTL"
+        >
+          <i data-lucide="arrow-left-right"></i>
+        </button>
+ 
+ 
+        <!-- Dark Mode -->
+        <button
+          class="header-icon-btn"
+          id="themeToggle"
+          type="button"
+          aria-label="Toggle dark mode"
+          title="Toggle Theme"
+        >
+          <i data-lucide="moon"></i>
+        </button>
+ 
+ 
+        <!-- Find Us -->
+        <a
+          href="contact.html#contact-location"
+          class="header-cta"
+        >
+          <i data-lucide="map-pin"></i>
+          <span>Find Us</span>
+        </a>
+ 
+ 
+        <!-- Mobile Menu -->
+        <button
+          class="mobile-menu-toggle"
+          id="menuToggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="navMenu"
+        >
+          <i data-lucide="menu"></i>
+        </button>
+ 
+      </div>
+ 
+    </div>
+  </header>
+
+
+  
+<section class="loyalty-hero" id="loyalty-hero">
+  <div class="loyalty-hero-overlay"></div>
+
+  <div class="loyalty-hero-container">
+    <div class="loyalty-hero-content">
+
+      <div class="loyalty-hero-eyebrow">
+        <span></span>
+        THE CHAI DARBAR REWARDS
+        <span></span>
+      </div>
+
+      <!-- <div class="loyalty-hero-ornament" aria-hidden="true">
+        <span></span>
+        <span class="loyalty-hero-ornament-icon">✥</span>
+        <span></span>
+      </div> -->
+
+      <h1 class="loyalty-hero-title">
+        Every Cup Brings
+        <span>You Closer to Royalty.</span>
+      </h1>
+
+      <p class="loyalty-hero-description">
+        Your love for chai deserves something special.
+        Earn rewards, enjoy exclusive treats, and make
+        every visit to Chai Darbar more rewarding.
+      </p>
+
+      <div class="loyalty-hero-actions">
+        <a href="#loyalty-rewards" class="loyalty-hero-primary">
+          <span>EXPLORE YOUR REWARDS</span>
+          <i data-lucide="arrow-down-right"></i>
+        </a>
+
+        <a href="#how-it-works" class="loyalty-hero-secondary">
+          HOW IT WORKS
+        </a>
+      </div>
+
+      <div class="loyalty-hero-highlights">
+        <div class="loyalty-hero-highlight">
+          <i data-lucide="crown"></i>
+          <span>EXCLUSIVE PERKS</span>
+        </div>
+
+        <span class="loyalty-hero-highlight-divider"></span>
+
+        <div class="loyalty-hero-highlight">
+          <i data-lucide="gift"></i>
+          <span>SPECIAL REWARDS</span>
+        </div>
+
+        <span class="loyalty-hero-highlight-divider"></span>
+
+        <div class="loyalty-hero-highlight">
+          <i data-lucide="coffee"></i>
+          <span>MORE CHAI MOMENTS</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="loyalty-hero-scroll">
+    <span></span>
+    <p>YOUR REWARDS JOURNEY BEGINS HERE</p>
+  </div>
+</section>
+
+
+<section class="loyalty-benefits" id="loyalty-rewards">
+  <div class="loyalty-benefits-container">
+
+    <div class="loyalty-benefits-heading">
+      <div class="loyalty-benefits-eyebrow">
+        <span></span>
+        A LITTLE MORE TO LOVE
+        <span></span>
+      </div>
+
+      <h2>
+        Your Loyalty Deserves
+        <span>Something Special.</span>
+      </h2>
+
+      <p>
+        Every visit brings a little more joy. Enjoy thoughtful perks,
+        delightful treats, and exclusive experiences made for chai lovers.
+      </p>
+    </div>
+
+    <div class="loyalty-benefits-grid">
+
+      <article class="loyalty-benefit-card">
+        <div class="loyalty-benefit-icon">
+          <i data-lucide="coffee"></i>
+        </div>
+        <span class="loyalty-benefit-number">01</span>
+        <h3>Every Sip Counts</h3>
+        <p>
+          Collect loyalty points with eligible purchases and turn
+          your regular chai moments into rewarding experiences.
+        </p>
+        <span class="loyalty-benefit-line"></span>
+      </article>
+
+      <article class="loyalty-benefit-card">
+        <div class="loyalty-benefit-icon">
+          <i data-lucide="gift"></i>
+        </div>
+        <span class="loyalty-benefit-number">02</span>
+        <h3>Delightful Rewards</h3>
+        <p>
+          Redeem your accumulated points for selected treats and
+          special rewards available through the loyalty program.
+        </p>
+        <span class="loyalty-benefit-line"></span>
+      </article>
+
+      <article class="loyalty-benefit-card">
+        <div class="loyalty-benefit-icon">
+          <i data-lucide="crown"></i>
+        </div>
+        <span class="loyalty-benefit-number">03</span>
+        <h3>Royal Privileges</h3>
+        <p>
+          Enjoy member-only perks and discover special experiences
+          created to make your Chai Darbar visits memorable.
+        </p>
+        <span class="loyalty-benefit-line"></span>
+      </article>
+
+      <article class="loyalty-benefit-card">
+        <div class="loyalty-benefit-icon">
+          <i data-lucide="heart"></i>
+        </div>
+        <span class="loyalty-benefit-number">04</span>
+        <h3>Made for Chai Lovers</h3>
+        <p>
+          Celebrate your love for authentic chai with a loyalty
+          experience that makes every visit feel a little more special.
+        </p>
+        <span class="loyalty-benefit-line"></span>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="loyalty-how" id="how-it-works">
+  <div class="loyalty-how-container">
+
+    <div class="loyalty-how-heading">
+      <div class="loyalty-how-eyebrow">
+        <span></span>
+        YOUR REWARDS JOURNEY
+        <span></span>
+      </div>
+
+      <h2>
+        Three Steps to
+        <span>Something Special.</span>
+      </h2>
+
+      <p>
+        A simple journey. More reasons to enjoy your favourite chai.
+      </p>
+    </div>
+
+    <div class="loyalty-timeline">
+
+      <article class="loyalty-timeline-step">
+        <div class="loyalty-timeline-marker">
+          <span class="loyalty-timeline-number">01</span>
+          <i data-lucide="user-round-plus"></i>
+        </div>
+
+        <div class="loyalty-timeline-content">
+          <span class="loyalty-timeline-label">STEP ONE</span>
+          <h3>Join the Royal Circle</h3>
+          <p>
+            Become a Chai Darbar loyalty member and begin
+            your journey towards delightful rewards.
+          </p>
+        </div>
+      </article>
+
+      <article class="loyalty-timeline-step">
+        <div class="loyalty-timeline-marker">
+          <span class="loyalty-timeline-number">02</span>
+          <i data-lucide="coffee"></i>
+        </div>
+
+        <div class="loyalty-timeline-content">
+          <span class="loyalty-timeline-label">STEP TWO</span>
+          <h3>Sip, Savour & Earn</h3>
+          <p>
+            Enjoy eligible purchases and collect loyalty points
+            according to the program's reward rules.
+          </p>
+        </div>
+      </article>
+
+      <article class="loyalty-timeline-step">
+        <div class="loyalty-timeline-marker">
+          <span class="loyalty-timeline-number">03</span>
+          <i data-lucide="gift"></i>
+        </div>
+
+        <div class="loyalty-timeline-content">
+          <span class="loyalty-timeline-label">STEP THREE</span>
+          <h3>Enjoy Your Rewards</h3>
+          <p>
+            Redeem accumulated points for rewards available
+            through the Chai Darbar loyalty program.
+          </p>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="loyalty-timeline-note">
+      Membership, earning and redemption are subject to program terms.
+    </p>
+
+  </div>
+</section>
+
+
+
+<section class="loyalty-privileges" id="loyalty-privileges">
+  <div class="loyalty-privileges-container">
+
+    <div class="loyalty-privileges-heading">
+      <div class="loyalty-privileges-eyebrow">
+        <span></span>
+        THE ART OF REWARDING YOU
+        <span></span>
+      </div>
+
+      <h2>
+        Little Pleasures.
+        <span>Royal Privileges.</span>
+      </h2>
+
+      <p>
+        A little something extra to make your favourite chai
+        moments even more memorable.
+      </p>
+    </div>
+
+    <div class="loyalty-privileges-layout">
+
+      <div class="loyalty-privileges-feature">
+        <div class="loyalty-privileges-image"></div>
+
+        <div class="loyalty-privileges-feature-content">
+          <span class="loyalty-privileges-feature-label">
+            A REWARD WORTH SAVOURING
+          </span>
+
+          <h3>Your Next Favourite Treat Awaits.</h3>
+
+          <p>
+            Turn your loyalty into delightful moments with
+            eligible rewards from the Chai Darbar collection.
+          </p>
+
+          <a href="#loyalty-join" class="loyalty-privileges-link">
+            DISCOVER MEMBERSHIP
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="loyalty-privileges-list">
+
+        <article class="loyalty-privilege-item">
+          <span class="loyalty-privilege-index">01</span>
+          <div class="loyalty-privilege-content">
+            <h3>Complimentary Chai</h3>
+            <p>Enjoy eligible chai rewards when you meet the program requirements.</p>
+          </div>
+          <i data-lucide="coffee"></i>
+        </article>
+
+        <article class="loyalty-privilege-item">
+          <span class="loyalty-privilege-index">02</span>
+          <div class="loyalty-privilege-content">
+            <h3>Special Treats</h3>
+            <p>Discover selected treats available through reward redemption.</p>
+          </div>
+          <i data-lucide="gift"></i>
+        </article>
+
+        <article class="loyalty-privilege-item">
+          <span class="loyalty-privilege-index">03</span>
+          <div class="loyalty-privilege-content">
+            <h3>Member-Only Perks</h3>
+            <p>Look forward to exclusive experiences offered to loyalty members.</p>
+          </div>
+          <i data-lucide="crown"></i>
+        </article>
+
+        <article class="loyalty-privilege-item">
+          <span class="loyalty-privilege-index">04</span>
+          <div class="loyalty-privilege-content">
+            <h3>Special Occasions</h3>
+            <p>Enjoy selected member treats and offers when available.</p>
+          </div>
+          <i data-lucide="sparkles"></i>
+        </article>
+
+      </div>
+    </div>
+
+    <p class="loyalty-privileges-note">
+      Rewards and offers are subject to availability and the loyalty program terms.
+    </p>
+
+  </div>
+</section>
+
+
+
+<section class="loyalty-circle" id="membership-tiers">
+  <div class="loyalty-circle-container">
+
+    <div class="loyalty-circle-top">
+      <div class="loyalty-circle-intro">
+        <div class="loyalty-circle-eyebrow">
+         
+          THE CHAI DARBAR MEMBERSHIP
+        </div>
+
+        <h2>
+          Welcome to
+          <span>The Royal Circle.</span>
+        </h2>
+
+        <p>
+          More than a loyalty program, it's a celebration of
+          every cup, every visit, and every moment shared over chai.
+        </p>
+      </div>
+
+      <div class="loyalty-circle-emblem" aria-hidden="true">
+        <div class="loyalty-circle-emblem-inner">
+          <i data-lucide="crown"></i>
+          <span>CD</span>
+          <small>THE ROYAL ART OF CHAI</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="loyalty-circle-levels">
+
+      <article class="loyalty-circle-level">
+        <span class="loyalty-circle-index">01 / BEGIN</span>
+        <h3>Chai Lover</h3>
+        <p>Your first step into a more rewarding chai ritual.</p>
+        <span class="loyalty-circle-level-mark">✦</span>
+      </article>
+
+      <article class="loyalty-circle-level loyalty-circle-level-featured">
+        <span class="loyalty-circle-index">02 / BELONG</span>
+        <h3>Royal Regular</h3>
+        <p>A place for familiar faces and memorable chai moments.</p>
+        <span class="loyalty-circle-level-mark">✦ ✦</span>
+      </article>
+
+      <article class="loyalty-circle-level">
+        <span class="loyalty-circle-index">03 / ASCEND</span>
+        <h3>Chai Royalty</h3>
+        <p>An elevated expression of your love for the perfect cup.</p>
+        <span class="loyalty-circle-level-mark">✦ ✦ ✦</span>
+      </article>
+
+    </div>
+
+    <div class="loyalty-circle-bottom">
+      <p>YOUR PLACE. YOUR RITUAL. YOUR ROYAL MOMENT.</p>
+      <a href="#loyalty-join">
+        EXPLORE MEMBERSHIP
+        <i data-lucide="arrow-up-right"></i>
+      </a>
+    </div>
+
+    <p class="loyalty-circle-note">
+      Membership levels are conceptual until official eligibility
+      requirements and benefits are established.
+    </p>
+
+  </div>
+</section>
+
+
+
+<section class="loyalty-final-cta" id="loyalty-join">
+  <div class="loyalty-final-cta-container">
+    <div class="loyalty-final-cta-ornament" aria-hidden="true">
+      <span></span>
+      <i data-lucide="crown"></i>
+      <span></span>
+    </div>
+
+    <p class="loyalty-final-cta-eyebrow">
+      YOUR ROYAL CHAI JOURNEY AWAITS
+    </p>
+
+    <h2>
+      Make Every Cup
+      <span>Count for Something.</span>
+    </h2>
+
+    <p class="loyalty-final-cta-description">
+      Celebrate your love for chai with a little more joy in every visit.
+      Discover the Chai Darbar loyalty experience and make your next cup
+      even more memorable.
+    </p>
+
+    <div class="loyalty-final-cta-actions">
+      <a href="contact.html" class="loyalty-final-cta-primary">
+        <span>JOIN THE ROYAL CIRCLE</span>
+        <i data-lucide="arrow-up-right"></i>
+      </a>
+
+      <a href="menu.html" class="loyalty-final-cta-secondary">
+        EXPLORE OUR CHAI
+      </a>
+    </div>
+
+    <div class="loyalty-final-cta-footer">
+      <span></span>
+      <p>THE ROYAL ART OF CHAI</p>
+      <span></span>
+    </div>
+  </div>
+</section>
+
+
+
+ 
+  <footer class="site-footer">
+ 
+  <div class="footer-container">
+ 
+    <!-- BRAND -->
+    <div class="footer-brand">
+ 
+      <a href="index.html" class="footer-logo">
+ 
+        <img
+          src="images/CHAI LGO 2.png"
+          alt="Chai Darbar Logo"
+        >
+ 
+        <div class="footer-brand-text">
+          <div class="footer-brand-name">
+            <span class="footer-chai">CHAI</span>
+            <span class="footer-darbar">DARBAR</span>
+          </div>
+ 
+          <span class="footer-tagline">
+            THE ROYAL ART OF CHAI
+          </span>
+        </div>
+ 
+      </a>
+ 
+      <p class="footer-description">
+        Discover the royal art of chai through authentic Indian
+        flavors, aromatic blends, and timeless tea-house moments.
+      </p>
+ 
+      <!-- Social Icons -->
+      <div class="footer-social">
+ 
+         <a href="#" aria-label="Instagram">
+              <i data-lucide="instagram"></i>
+            </a>
+ 
+            <a href="#" aria-label="Facebook">
+              <i data-lucide="facebook"></i>
+            </a>
+ 
+            <a href="#" aria-label="Youtube">
+              <i data-lucide="youtube"></i>
+            </a>
+ 
+            <a href="#" aria-label="Email">
+              <i data-lucide="mail"></i>
+            </a>
+ 
+      </div>
+ 
+    </div>
+ 
+ 
+    <!-- QUICK LINKS -->
+    <div class="footer-column">
+ 
+      <h3>Quick Links</h3>
+ 
+      <ul>
+ 
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+ 
+        <li>
+          <a href="home2.html">Premium Home</a>
+        </li>
+ 
+        <li>
+          <a href="about.html">About Us</a>
+        </li>
+ 
+        <li>
+          <a href="ourchai.html">Our Chai</a>
+        </li>
+ 
+        <li>
+          <a href="menu.html">Menu</a>
+        </li>
+ 
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+ 
+      </ul>
+ 
+    </div>
+ 
+ 
+    <!-- OUR CHAI -->
+    <div class="footer-column">
+ 
+      <h3>Our Chai</h3>
+ 
+      <ul>
+ 
+        <li>
+          <a href="ourchai.html">Masala Chai</a>
+        </li>
+ 
+        <li>
+          <a href="ourchai.html">Ginger Chai</a>
+        </li>
+ 
+        <li>
+          <a href="ourchai.html">Cardamom Chai</a>
+        </li>
+ 
+        <li>
+          <a href="ourchai.html">Saffron Chai</a>
+        </li>
+ 
+        <li>
+          <a href="menu.html">Tea House Menu</a>
+        </li>
+ 
+        <li>
+          <a href="menu.html">Specialty Blends</a>
+        </li>
+ 
+      </ul>
+ 
+    </div>
+ 
+ 
+    <!-- EXPERIENCE -->
+    <div class="footer-column">
+ 
+      <h3>Experience</h3>
+ 
+      <ul>
+ 
+        <li>
+          <a href="loyalty.html">Loyalty Program</a>
+        </li>
+ 
+        <li>
+          <a href="comingsoon.html">Coming Soon</a>
+        </li>
+ 
+        <li>
+          <a href="404.html">404 Page</a>
+        </li>
+ 
+        <li>
+          <a href="contact.html">Find Us</a>
+        </li>
+ 
+        <li>
+          <a href="contact.html">Visit Chai Darbar</a>
+        </li>
+ 
+      </ul>
+ 
+    </div>
+ 
+ 
+    <!-- VISIT US -->
+    <div class="footer-column footer-visit">
+ 
+      <h3>Visit Us</h3>
+ 
+      <div class="footer-contact-item">
+ 
+        <i data-lucide="map-pin"></i>
+ 
+        <span>
+          Hyderabad, Telangana,<br>
+          India
+        </span>
+ 
+      </div>
+ 
+      <div class="footer-contact-item">
+ 
+        <i data-lucide="phone"></i>
+ 
+        <a href="tel:+919999999999">
+          +91 99999 99999
+        </a>
+ 
+      </div>
+ 
+      <div class="footer-contact-item">
+ 
+        <i data-lucide="mail"></i>
+ 
+        <a href="mailto:hello@chaidarbar.com">
+          hello@chaidarbar.com
+        </a>
+ 
+      </div>
+ 
+      <div class="footer-contact-item">
+ 
+        <i data-lucide="clock"></i>
+ 
+        <span>
+          Mon – Sun: 8 AM – 11 PM
+        </span>
+ 
+      </div>
+<!--
+      <a href="contact.html" class="footer-visit-btn">
+        Find Us
+        <i data-lucide="arrow-up-right"></i>
+      </a> -->
+ 
+    </div>
+ 
+  </div>
+ 
+ 
+  <!-- FOOTER BOTTOM -->
+  <div class="footer-bottom">
+ 
+    <div class="footer-bottom-container">
+ 
+      <p class="footer-copyright">
+        © 2026 Chai Darbar. All Rights Reserved.
+      </p>
+ 
+      <div class="footer-legal">
+ 
+        <a href="privacy.html">
+          Privacy Policy
+        </a>
+ 
+        <a href="terms.html">
+          Terms &amp; Conditions
+        </a>
+ 
+        <a href="cookies.html">
+          Cookies
+        </a>
+ 
+      </div>
+ 
+      <button
+        class="back-to-top"
+        id="backToTop"
+        type="button"
+        aria-label="Back to top"
+      >
+        <i data-lucide="arrow-up"></i>
+      </button>
+ 
+    </div>
+ 
+  </div>
+ 
+</footer>
+ 
+ 
+  <!-- Lucide Icons -->
+ <script src="https://unpkg.com/lucide@0.542.0/dist/umd/lucide.min.js"></script>
+ 
+  <!-- Website JS -->
+  <script src="index.js"></script>
+ 
+</body>
+</html>

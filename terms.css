@@ -1,0 +1,48 @@
+
+/* =====================================================
+   CHAI DARBAR — TERMS & CONDITIONS
+   Shared layout inherited from privacy.css
+   ===================================================== */
+
+.legal-hero__title {
+  max-width: 100%;
+  font-size: clamp(2.65rem, 6vw, 4.8rem);
+  white-space: normal;
+}
+
+.legal-hero__title span {
+  color: var(--secondary);
+}
+
+.terms-contact-btn {
+  margin-top: 20px;
+}
+
+/* Keep the terms page visually consistent in dark mode. */
+body.dark-mode .legal-hero__title {
+  color: #FFFFFF;
+}
+
+body.dark-mode .legal-hero__title span {
+  color: var(--secondary);
+}
+
+/* RTL */
+html[dir="rtl"] .terms-contact-btn {
+  direction: rtl;
+}
+
+/* Tablet */
+@media (max-width: 760px) {
+  .legal-hero__title {
+    font-size: clamp(2.4rem, 7vw, 3.8rem);
+  }
+}
+
+/* Mobile */
+@media (max-width: 520px) {
+  .legal-hero__title {
+    font-size: clamp(2rem, 8vw, 2.8rem);
+    line-height: 1.2;
+  }
+}

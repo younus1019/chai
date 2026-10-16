@@ -1,0 +1,949 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>menu</title>
+    <link rel="icon" type="image/png" href="images/CHAI LGO 2.png" />
+
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="global.css" />
+  </head>
+
+  <body>
+    <header class="site-header" id="siteHeader">
+      <div class="header-container">
+        <!-- Brand -->
+        <a href="index.html" class="brand-logo" aria-label="Chai Darbar Home">
+          <img src="images/CHAI LGO 2.png" alt="Chai Darbar Logo" />
+
+          <span class="brand-name">
+            <span class="brand-chai">CHAI</span>
+            <span class="brand-darbar">DARBAR</span>
+            <span class="brand-tagline">THE ROYAL ART OF CHAI</span>
+          </span>
+        </a>
+
+        <!-- Navigation -->
+        <nav class="main-nav" id="navMenu" aria-label="Main Navigation">
+          <!-- Home Dropdown -->
+          <div class="nav-dropdown">
+            <button
+              class="nav-dropdown-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-haspopup="true"
+            >
+              <span>Home</span>
+              <i data-lucide="chevron-down"></i>
+            </button>
+
+            <div class="nav-dropdown-menu">
+              <a href="index.html" class="nav-dropdown-link">
+                <span class="nav-dropdown-title">
+                  <i data-lucide="house"></i>
+                  <span>Home 1</span>
+                </span>
+
+                <small>Classic Heritage</small>
+              </a>
+
+              <a href="index2.html" class="nav-dropdown-link">
+                <span class="nav-dropdown-title">
+                  <i data-lucide="sparkles"></i>
+                  <span>Home 2</span>
+                </span>
+
+                <small>Premium Royal</small>
+              </a>
+            </div>
+          </div>
+
+          <!-- Main Links -->
+          <a href="about.html" class="nav-link"> About Us </a>
+
+          <a href="ourchai.html" class="nav-link"> Our Chai </a>
+
+          <a href="menu.html" class="nav-link"> Menu </a>
+
+          <a href="loyalty.html" class="nav-link"> Loyalty </a>
+
+          <a href="contact.html" class="nav-link"> Contact </a>
+
+                  <a href="contact.html#contact-location" class="nav-mobile-cta">
+  <i data-lucide="map-pin"></i>
+  <span>Find Us</span>
+</a>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+          <!-- RTL -->
+          <button
+            class="header-icon-btn"
+            id="rtlToggle"
+            type="button"
+            aria-label="Toggle RTL direction"
+            title="Toggle RTL"
+          >
+            <i data-lucide="arrow-left-right"></i>
+          </button>
+
+          <!-- Dark Mode -->
+          <button
+            class="header-icon-btn"
+            id="themeToggle"
+            type="button"
+            aria-label="Toggle dark mode"
+            title="Toggle Theme"
+          >
+            <i data-lucide="moon"></i>
+          </button>
+
+          <!-- Find Us -->
+          <a href="contact.html#contact-location" class="header-cta">
+            <i data-lucide="map-pin"></i>
+            <span>Find Us</span>
+          </a>
+
+          <!-- Mobile Menu -->
+          <button
+            class="mobile-menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="navMenu"
+          >
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+
+    <section class="menu-hero" id="menu-hero">
+      <div class="menu-hero-overlay"></div>
+
+      <div class="menu-hero-frame">
+        <div class="menu-hero-content">
+          <div class="menu-hero-eyebrow">
+            <span></span>
+            THE ROYAL CHAI COLLECTION
+            <span></span>
+          </div>
+
+          <!-- <div class="menu-hero-ornament" aria-hidden="true">
+            <span></span>
+            <span class="menu-hero-ornament-icon">✥</span>
+            <span></span>
+          </div> -->
+
+          <h1 class="menu-hero-title">
+            A Menu Made
+            <span>for Every Mood.</span>
+          </h1>
+
+          <p class="menu-hero-description">
+            From timeless classics to extraordinary royal blends, discover
+            authentic flavours crafted for every chai moment.
+          </p>
+
+          <a href="#menu-categories" class="menu-hero-button">
+            <span>EXPLORE THE MENU</span>
+            <span class="menu-hero-button-icon" aria-hidden="true">↓</span>
+          </a>
+
+          <div class="menu-hero-category-line">
+            <span>TIMELESS CLASSICS</span>
+            <span class="menu-hero-category-symbol">✥</span>
+            <span>ROYAL BLENDS</span>
+            <span class="menu-hero-category-symbol">✥</span>
+            <span>SPECIALTY CHAI</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-hero-scroll">
+        <span class="menu-hero-scroll-line"></span>
+        <span>DISCOVER THE COLLECTION</span>
+      </div>
+    </section>
+
+    <section class="menu-category-nav" id="menu-category-nav">
+      <div class="menu-category-nav-container">
+        <div class="menu-category-heading">
+          <div class="menu-category-eyebrow">
+            <span></span>
+            EXPLORE OUR COLLECTION
+            <span></span>
+          </div>
+
+          <h2>Find Your Kind of <span>Chai.</span></h2>
+
+          <p>
+            Every blend has its own character, aroma and flavour. Discover the
+            one that speaks to you.
+          </p>
+        </div>
+
+        <nav class="menu-category-tabs" aria-label="Menu categories">
+          <a
+            href="#all-chai"
+            class="menu-category-tab active"
+            aria-current="true"
+          >
+            All Chai
+          </a>
+
+          <a href="#classic-chai" class="menu-category-tab"> Classic Chai </a>
+
+          <a href="#royal-blends" class="menu-category-tab"> Royal Blends </a>
+
+          <a href="#specialtychai" class="menu-category-tab">
+            Specialty Chai
+          </a>
+
+          <a href="#tea-more" class="menu-category-tab"> Tea &amp; More </a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="menu-classic" id="classic-chai">
+      <div class="menu-classic-container">
+        <div class="menu-classic-heading">
+          <div class="menu-classic-eyebrow">
+            <span></span>
+            THE EVERYDAY ROYALS
+            <span></span>
+          </div>
+
+          <h2>
+            Timeless Cups,
+            <span>Unforgettable Flavours.</span>
+          </h2>
+
+          <p>
+            Rooted in tradition and brewed with care, discover the comforting
+            chai classics that make every moment special.
+          </p>
+        </div>
+
+        <div class="menu-classic-grid">
+          <article class="menu-classic-card">
+            <div class="menu-classic-image">
+              <img
+                src="./images/classic chai.jfif"
+                alt="Traditional classic Indian chai"
+              />
+              <span class="menu-classic-number">01</span>
+            </div>
+
+            <div class="menu-classic-info">
+              <div class="menu-classic-title-row">
+                <h3>Classic Chai</h3>
+                <span class="menu-classic-price">₹ 30</span>
+              </div>
+              <p>
+                Smooth, comforting milk tea brewed to capture the timeless taste
+                of traditional chai.
+              </p>
+              <div class="menu-classic-meta">
+                <span>TRADITIONAL</span>
+                <span class="menu-classic-dot"></span>
+                <span>HOT & FRESH</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-classic-card">
+            <div class="menu-classic-image">
+              <img
+                src="./images/Smoky Masala Chai.jfif"
+                alt="Aromatic Indian masala chai"
+              />
+              <span class="menu-classic-number">02</span>
+            </div>
+
+            <div class="menu-classic-info">
+              <div class="menu-classic-title-row">
+                <h3>Masala Chai</h3>
+                <span class="menu-classic-price">₹ 40</span>
+              </div>
+              <p>
+                A warming blend of tea and fragrant spices for a rich, aromatic
+                chai experience.
+              </p>
+              <div class="menu-classic-meta">
+                <span>SPICED</span>
+                <span class="menu-classic-dot"></span>
+                <span>AROMATIC</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-classic-card">
+            <div class="menu-classic-image">
+              <img src="./images/ginger tea.jfif" alt="Fresh ginger chai" />
+              <span class="menu-classic-number">03</span>
+            </div>
+
+            <div class="menu-classic-info">
+              <div class="menu-classic-title-row">
+                <h3>Ginger Chai</h3>
+                <span class="menu-classic-price">₹ 30</span>
+              </div>
+              <p>
+                A lively, comforting cup featuring the distinctive warmth and
+                aroma of ginger.
+              </p>
+              <div class="menu-classic-meta">
+                <span>GINGER</span>
+                <span class="menu-classic-dot"></span>
+                <span>BOLD FLAVOUR</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-classic-card">
+            <div class="menu-classic-image">
+              <img
+                src="./images/ichali chai.jfif"
+                alt="Fragrant cardamom chai"
+              />
+              <span class="menu-classic-number">04</span>
+            </div>
+
+            <div class="menu-classic-info">
+              <div class="menu-classic-title-row">
+                <h3>Elaichi Chai</h3>
+                <span class="menu-classic-price">₹ 35</span>
+              </div>
+              <p>
+                Delicate cardamom fragrance meets rich tea in this elegant,
+                aromatic classic.
+              </p>
+              <div class="menu-classic-meta">
+                <span>CARDAMOM</span>
+                <span class="menu-classic-dot"></span>
+                <span>FRAGRANT</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-classic-card">
+            <div class="menu-classic-image">
+              <img
+                src="./images/cut chai.jfif"
+                alt="Traditional cutting chai served in a small glass"
+              />
+              <span class="menu-classic-number">05</span>
+            </div>
+
+            <div class="menu-classic-info">
+              <div class="menu-classic-title-row">
+                <h3>Cutting Chai</h3>
+                <span class="menu-classic-price">₹ 25</span>
+              </div>
+              <p>
+                A small serving packed with bold tea flavour, perfect for a
+                quick and satisfying break.
+              </p>
+              <div class="menu-classic-meta">
+                <span>STRONG</span>
+                <span class="menu-classic-dot"></span>
+                <span>QUICK SIP</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-classic-card">
+            <div class="menu-classic-image">
+              <img src="./images/tulasi tea.jfif" alt="Traditional tulsi chai" />
+              <span class="menu-classic-number">07</span>
+            </div>
+
+            <div class="menu-classic-info">
+              <div class="menu-classic-title-row">
+                <h3>Tulsi Chai</h3>
+                <span class="menu-classic-price">₹ 35</span>
+              </div>
+              <p>
+                A fragrant tea infused with the distinctive herbal aroma of
+                tulsi for a soothing tea-time experience.
+              </p>
+              <div class="menu-classic-meta">
+                <span>HERBAL NOTES</span>
+                <span class="menu-classic-dot"></span>
+                <span>AROMATIC</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-classic-card">
+            <div class="menu-classic-image">
+              <img
+                src="./images/strong chai.jfif"
+                alt="Strong Indian milk chai"
+              />
+              <span class="menu-classic-number">08</span>
+            </div>
+
+            <div class="menu-classic-info">
+              <div class="menu-classic-title-row">
+                <h3>Strong Chai</h3>
+                <span class="menu-classic-price">₹ 30</span>
+              </div>
+              <p>
+                A bold, full-bodied brew with a deeper tea flavour for those who
+                enjoy a stronger cup.
+              </p>
+              <div class="menu-classic-meta">
+                <span>BOLD BREW</span>
+                <span class="menu-classic-dot"></span>
+                <span>RICH FLAVOUR</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-classic-card">
+            <div class="menu-classic-image">
+              <img
+                src="./images/black tea.jfif"
+                alt="Freshly brewed black tea"
+              />
+              <span class="menu-classic-number">09</span>
+            </div>
+
+            <div class="menu-classic-info">
+              <div class="menu-classic-title-row">
+                <h3>Black Tea</h3>
+                <span class="menu-classic-price">₹ 40</span>
+              </div>
+              <p>
+                A simple, refreshing brew with a clean tea aroma and a naturally
+                robust character.
+              </p>
+              <div class="menu-classic-meta">
+                <span>NO MILK</span>
+                <span class="menu-classic-dot"></span>
+                <span>CLASSIC BREW</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-classic-card">
+            <div class="menu-classic-image">
+              <img
+                src="./images/lemon tea.jfif"
+                alt="Freshly prepared lemon tea"
+              />
+              <span class="menu-classic-number">06</span>
+            </div>
+
+            <div class="menu-classic-info">
+              <div class="menu-classic-title-row">
+                <h3>Lemon Tea</h3>
+                <span class="menu-classic-price">₹ 35</span>
+              </div>
+              <p>
+                A refreshing tea with bright citrus notes for a lighter,
+                refreshing tea-time option.
+              </p>
+              <div class="menu-classic-meta">
+                <span>CITRUS</span>
+                <span class="menu-classic-dot"></span>
+                <span>REFRESHING</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="menu-classic-footer">
+          <span class="menu-classic-footer-line"></span>
+          <p>EVERY CUP BREWED WITH CARE</p>
+          <span class="menu-classic-footer-line"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-royal" id="royal-blends">
+      <div class="menu-royal-container">
+        <div class="menu-royal-heading">
+          <div class="menu-royal-eyebrow">
+            <span></span>
+            A TASTE OF ROYALTY
+            <span></span>
+          </div>
+
+          <h2>
+            Beyond the Ordinary,
+            <span>Into the Extraordinary.</span>
+          </h2>
+
+          <p>
+            Discover distinctive blends inspired by rich aromas, delicate spices
+            and the timeless art of Indian chai.
+          </p>
+        </div>
+
+        <div class="menu-royal-layout">
+          <article class="menu-royal-feature">
+            <div class="menu-royal-feature-image">
+              <img src="./images/kesar chai.png" alt="Kesar saffron chai" />
+              <span class="menu-royal-feature-label">SIGNATURE SELECTION</span>
+            </div>
+
+            <div class="menu-royal-feature-content">
+              <span class="menu-royal-index">01 / THE ROYAL CUP</span>
+
+              <h3>Kesar Chai</h3>
+
+              <p>
+                An indulgent chai experience inspired by the delicate aroma of
+                saffron and the warmth of traditional Indian spices.
+              </p>
+
+              <div class="menu-royal-feature-bottom">
+                <span class="menu-royal-price">₹ 50</span>
+                <span class="menu-royal-feature-note">BREWED WITH CARE</span>
+              </div>
+            </div>
+          </article>
+
+          <div class="menu-royal-list">
+            <article class="menu-royal-item">
+              <div class="menu-royal-item-image">
+                <img
+                  src="./images/ichali chai.jfif"
+                  alt="Cardamom specialty chai"
+                />
+              </div>
+
+              <div class="menu-royal-item-content">
+                <span class="menu-royal-item-number">02</span>
+                <h3>Royal Elaichi Chai</h3>
+                <p>
+                  Fragrant cardamom notes blended into a smooth, aromatic cup.
+                </p>
+                <span class="menu-royal-item-tag">FRAGRANT & SMOOTH</span>
+              </div>
+
+              <span class="menu-royal-item-price">₹ 45</span>
+            </article>
+
+            <article class="menu-royal-item">
+              <div class="menu-royal-item-image">
+                <img src="./images/irani chai.jfif" alt="Rich Irani chai" />
+              </div>
+
+              <div class="menu-royal-item-content">
+                <span class="menu-royal-item-number">03</span>
+                <h3>Irani Chai</h3>
+                <p>
+                  A rich, creamy-style tea inspired by the classic Irani tea
+                  tradition.
+                </p>
+                <span class="menu-royal-item-tag">RICH & CREAMY</span>
+              </div>
+
+              <span class="menu-royal-item-price">₹ 45</span>
+            </article>
+
+            <article class="menu-royal-item">
+              <div class="menu-royal-item-image">
+                <img
+                  src="./images/badam tea.jfif"
+                  alt="Almond specialty chai"
+                />
+              </div>
+
+              <div class="menu-royal-item-content">
+                <span class="menu-royal-item-number">04</span>
+                <h3>Badam Chai</h3>
+                <p>
+                  A nutty, aromatic chai variation inspired by the flavour of
+                  almonds.
+                </p>
+                <span class="menu-royal-item-tag">NUTTY & AROMATIC</span>
+              </div>
+
+              <span class="menu-royal-item-price">₹ 50</span>
+            </article>
+
+            <article class="menu-royal-item">
+              <div class="menu-royal-item-image">
+                <img src="./images/clove chai.jfif" alt="Spiced clove chai" />
+              </div>
+
+              <div class="menu-royal-item-content">
+                <span class="menu-royal-item-number">05</span>
+                <h3>Clove Spice Chai</h3>
+                <p>
+                  A warming specialty blend featuring the distinctive aroma of
+                  clove.
+                </p>
+                <span class="menu-royal-item-tag">WARM & SPICED</span>
+              </div>
+
+              <span class="menu-royal-item-price">₹ 45</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="menu-royal-footer">
+          <span></span>
+          <p>THE ROYAL ART OF CHAI</p>
+          <span></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-snacks" id="tea-more">
+      <div class="menu-snacks-container">
+        <div class="menu-snacks-heading">
+          <div class="menu-snacks-eyebrow">
+            <span></span>
+            THE PERFECT PAIRING
+            <span></span>
+          </div>
+
+          <h2>
+            A Little Something
+            <span>Alongside Your Chai.</span>
+          </h2>
+
+          <p>
+            Some moments call for more than a cup. Pair your favourite chai with
+            a comforting tea-time treat.
+          </p>
+        </div>
+
+        <div class="menu-snacks-grid">
+          <article class="menu-snack-card">
+            <div class="menu-snack-image">
+              <img src="./images/samosa.jfif" alt="Golden crispy samosas" />
+              <span class="menu-snack-number">01</span>
+            </div>
+            <div class="menu-snack-content">
+              <div class="menu-snack-title-row">
+                <h3>Classic Samosa</h3>
+                <span class="menu-snack-price">₹ 25</span>
+              </div>
+              <p>A crisp, golden pastry with a flavourful savoury filling.</p>
+              <span class="menu-snack-tag">A TEA-TIME FAVOURITE</span>
+            </div>
+          </article>
+
+          <article class="menu-snack-card">
+            <div class="menu-snack-image">
+              <img
+                src="./images/bun maska.jfif"
+                alt="Soft bun maska with butter"
+              />
+              <span class="menu-snack-number">02</span>
+            </div>
+            <div class="menu-snack-content">
+              <div class="menu-snack-title-row">
+                <h3>Bun Maska</h3>
+                <span class="menu-snack-price">₹ 40</span>
+              </div>
+              <p>
+                A soft, buttery bun made for dipping into a warm cup of chai.
+              </p>
+              <span class="menu-snack-tag">SOFT & BUTTERY</span>
+            </div>
+          </article>
+
+          <article class="menu-snack-card">
+            <div class="menu-snack-image">
+              <img src="./images/tea biscuits.jfif" alt="Tea-time biscuits" />
+              <span class="menu-snack-number">03</span>
+            </div>
+            <div class="menu-snack-content">
+              <div class="menu-snack-title-row">
+                <h3>Tea-Time Biscuits</h3>
+                <span class="menu-snack-price">₹ 20</span>
+              </div>
+              <p>A simple, crunchy companion for your everyday chai ritual.</p>
+              <span class="menu-snack-tag">CRISP & CLASSIC</span>
+            </div>
+          </article>
+
+          <article class="menu-snack-card">
+            <div class="menu-snack-image">
+              <img src="./images/onion pakoda.jfif" alt="Crispy onion pakoda" />
+              <span class="menu-snack-number">04</span>
+            </div>
+            <div class="menu-snack-content">
+              <div class="menu-snack-title-row">
+                <h3>Onion Pakoda</h3>
+                <span class="menu-snack-price">₹ 40</span>
+              </div>
+              <p>
+                A savoury, crispy snack that pairs beautifully with masala chai.
+              </p>
+              <span class="menu-snack-tag">CRUNCHY & SAVOURY</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="menu-snacks-note">
+          <span class="menu-snacks-note-line"></span>
+          <p>GOOD CHAI. GOOD COMPANY. GREAT LITTLE MOMENTS.</p>
+          <span class="menu-snacks-note-line"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-cta" id="menu-cta">
+      <div class="menu-cta-container">
+        <div class="menu-cta-frame">
+          <div class="menu-cta-eyebrow">
+            <span></span>
+            YOUR NEXT FAVOURITE CUP AWAITS
+            <span></span>
+          </div>
+
+          <!-- <div class="menu-cta-ornament" aria-hidden="true">
+            <span></span>
+            <span class="menu-cta-ornament-icon">✥</span>
+            <span></span>
+          </div> -->
+
+          <h2 class="menu-cta-title">
+            Every Great Moment
+            <span>Begins with Chai.</span>
+          </h2>
+
+          <p class="menu-cta-description">
+            From timeless classics to royal blends, find the perfect cup to
+            match your mood and make every sip memorable.
+          </p>
+
+          <div class="menu-cta-actions">
+            <a href="contact.html" class="menu-cta-primary">
+              <span>VISIT CHAI DARBAR</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+
+            <a href="loyalty.html" class="menu-cta-secondary">
+              <i data-lucide="crown"></i>
+              <span>DISCOVER OUR LOYALTY PROGRAM</span>
+            </a>
+          </div>
+
+          <div class="menu-cta-footer">
+            <span></span>
+            <p>THE ROYAL ART OF CHAI</p>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- BRAND -->
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <img src="images/CHAI LGO 2.png" alt="Chai Darbar Logo" />
+
+            <div class="footer-brand-text">
+              <div class="footer-brand-name">
+                <span class="footer-chai">CHAI</span>
+                <span class="footer-darbar">DARBAR</span>
+              </div>
+
+              <span class="footer-tagline"> THE ROYAL ART OF CHAI </span>
+            </div>
+          </a>
+
+          <p class="footer-description">
+            Discover the royal art of chai through authentic Indian flavors,
+            aromatic blends, and timeless tea-house moments.
+          </p>
+
+          <!-- Social Icons -->
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">
+              <i data-lucide="instagram"></i>
+            </a>
+
+            <a href="#" aria-label="Facebook">
+              <i data-lucide="facebook"></i>
+            </a>
+
+            <a href="#" aria-label="Youtube">
+              <i data-lucide="youtube"></i>
+            </a>
+
+            <a href="#" aria-label="Email">
+              <i data-lucide="mail"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="index2.html">Premium Home</a>
+            </li>
+
+            <li>
+              <a href="about.html">About Us</a>
+            </li>
+
+            <li>
+              <a href="ourchai.html">Our Chai</a>
+            </li>
+
+            <li>
+              <a href="menu.html">Menu</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- OUR CHAI -->
+        <div class="footer-column">
+          <h3>Our Chai</h3>
+
+          <ul>
+            <li>
+              <a href="ourchai.html">Masala Chai</a>
+            </li>
+
+            <li>
+              <a href="ourchai.html">Ginger Chai</a>
+            </li>
+
+            <li>
+              <a href="ourchai.html">Cardamom Chai</a>
+            </li>
+
+            <li>
+              <a href="ourchai.html">Saffron Chai</a>
+            </li>
+
+            <li>
+              <a href="menu.html">Tea House Menu</a>
+            </li>
+
+            <li>
+              <a href="menu.html">Specialty Blends</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- EXPERIENCE -->
+        <div class="footer-column">
+          <h3>Experience</h3>
+
+          <ul>
+            <li>
+              <a href="loyalty.html">Loyalty Program</a>
+            </li>
+
+            <li>
+              <a href="comingsoon.html">Coming Soon</a>
+            </li>
+
+            <li>
+              <a href="404.html">404 Page</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Find Us</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Visit Chai Darbar</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- VISIT US -->
+        <div class="footer-column footer-visit">
+          <h3>Visit Us</h3>
+
+          <div class="footer-contact-item">
+            <i data-lucide="map-pin"></i>
+
+            <span>
+              Hyderabad, Telangana,<br />
+              India
+            </span>
+          </div>
+
+          <div class="footer-contact-item">
+            <i data-lucide="phone"></i>
+
+            <a href="tel:+919999999999"> +91 99999 99999 </a>
+          </div>
+
+          <div class="footer-contact-item">
+            <i data-lucide="mail"></i>
+
+            <a href="mailto:hello@chaidarbar.com"> hello@chaidarbar.com </a>
+          </div>
+
+          <div class="footer-contact-item">
+            <i data-lucide="clock"></i>
+
+            <span> Mon – Sun: 8 AM – 11 PM </span>
+          </div>
+          <!--
+      <a href="contact.html" class="footer-visit-btn">
+        Find Us
+        <i data-lucide="arrow-up-right"></i>
+      </a> -->
+        </div>
+      </div>
+
+      <!-- FOOTER BOTTOM -->
+      <div class="footer-bottom">
+        <div class="footer-bottom-container">
+          <p class="footer-copyright">
+            © 2026 Chai Darbar. All Rights Reserved.
+          </p>
+
+          <div class="footer-legal">
+            <a href="privacy.html"> Privacy Policy </a>
+
+            <a href="terms.html"> Terms &amp; Conditions </a>
+
+            <a href="cookies.html"> Cookies </a>
+          </div>
+
+          <button
+            class="back-to-top"
+            id="backToTop"
+            type="button"
+            aria-label="Back to top"
+          >
+            <i data-lucide="arrow-up"></i>
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@0.542.0/dist/umd/lucide.min.js"></script>
+
+    <!-- Website JS -->
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+
+/* =====================================================
+   CHAI DARBAR — COOKIES POLICY
+   Shared design inherited from privacy.css
+   ===================================================== */
+
+.legal-hero__title {
+  max-width: 100%;
+  font-size: clamp(2.8rem, 6vw, 4.8rem);
+  line-height: 1.15;
+}
+
+.legal-hero__title span {
+  color: var(--secondary);
+}
+
+.legal-inline-link {
+  color: var(--secondary);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: rgba(184, 137, 60, 0.5);
+  text-underline-offset: 4px;
+  transition: var(--transition);
+}
+
+.legal-inline-link:hover {
+  color: var(--text);
+  text-decoration-color: currentColor;
+}
+
+.cookies-contact-btn {
+  margin-top: 20px;
+}
+
+/* Dark mode: only COOKIES becomes white; POLICY stays gold. */
+body.dark-mode .legal-hero__title {
+  color: #FFFFFF;
+}
+
+body.dark-mode .legal-hero__title span {
+  color: var(--secondary);
+}
+
+body.dark-mode .legal-inline-link:hover {
+  color: #FFFFFF;
+}
+
+/* RTL */
+html[dir="rtl"] .cookies-contact-btn {
+  direction: rtl;
+}
+
+/* Tablet */
+@media (max-width: 760px) {
+  .legal-hero__title {
+    font-size: clamp(2.5rem, 7vw, 3.8rem);
+  }
+}
+
+/* Mobile */
+@media (max-width: 520px) {
+  .legal-hero__title {
+    font-size: clamp(2.15rem, 8vw, 2.8rem);
+    line-height: 1.2;
+  }
+}
